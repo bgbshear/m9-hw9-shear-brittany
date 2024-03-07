@@ -112,7 +112,7 @@ main article {
 
 main p {
   line-height: 1.75;
-  margin-bottom: 48px;;
+  margin-bottom: 48px;
 }
 
 main > article img {
@@ -130,4 +130,40 @@ footer {
   text-transform: uppercase;
   padding: 24px 0;
   color: var(--off-white);
+}
+
+@media screen and (max-width: 500px) {
+  section.hero > .call-to-action {
+    font-size: 1.25rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  header {
+    padding: 20px 0;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav > a:not(:first-of-type){
+    margin-left: 0;
+  }
+
+  nav > a.logo {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  main > section, main > article {
+    margin-bottom: 15px;
+  }
+
+  main > article img {
+    float: none;
+    justify-content: center;
+  }
 }
